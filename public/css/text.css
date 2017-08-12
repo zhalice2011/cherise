@@ -1,0 +1,130 @@
+.wrap {
+  background-color: #fff;
+  margin-top: 4.35555556rem;
+  margin-bottom: 0.4rem;
+}
+.wrap .text_type {
+  width: 14.22222222rem;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.wrap .text_type li {
+  float: left;
+  margin: 0.17777778rem 0.11111111rem;
+  width: 2.48888889rem;
+  height: 1.04444444rem;
+  border-radius: 1.08888889rem;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+}
+.wrap .text_type li a {
+  display: block;
+  font-size: 0.44444444rem;
+  line-height: 1.04444444rem;
+  color: #646464;
+}
+.wrap .text_type li.current {
+  border: 1px solid #bd964f;
+}
+.wrap .text_type li.current a {
+  color: #bd964f;
+}
+.textList {
+  padding-bottom: 0.66666667rem;
+  background-color: #fff;
+}
+.textList .news_lists {
+  width: 14rem;
+  margin: 0 auto;
+}
+.textList li.first {
+  min-height: 11.44444444rem;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  padding-bottom: 0.66666667rem;
+}
+.textList li.first .lab {
+  float: left;
+  margin-top: 0.66666667rem;
+  font-size: 0.53333333rem;
+  color: #6b767a;
+  line-height: 0.88888889rem;
+  width: 2.53333333rem;
+  height: 0.84444444rem;
+  border-radius: 1.08888889rem;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+}
+.textList li.first .eye {
+  float: right;
+  font-size: 0.5rem;
+  color: #9d9d9d;
+  padding-left: 0.8rem;
+  margin-top: 0.66666667rem;
+  background: url('../images/eyes_05.png') left center no-repeat;
+  background-size: 0.8rem 0.8rem;
+}
+.textList li.first h2 {
+  color: #000;
+  font-size: 0.71111111rem;
+  line-height: 1.11111111rem;
+  padding: 0.44444444rem 0;
+  font-weight: bold;
+}
+.textList li.item {
+  height: 4.11111111rem;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+}
+.textList li.item .new_info {
+  width: 9.33333333rem;
+  padding-top: 0.33333333rem;
+}
+.textList li.item h2 {
+  color: #323232;
+  font-size: 0.62222222rem;
+  line-height: 0.88888889rem;
+}
+.textList li.item .lab {
+  position: absolute;
+  left: 0 ;
+  top: 60%;
+  font-size: 0.53333333rem;
+  color: #6b767a;
+  line-height: 0.88888889rem;
+  width: 2.53333333rem;
+  height: 0.84444444rem;
+  border-radius: 1.08888889rem;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+}
+.textList li.item .eye {
+  position: absolute;
+  right: 33% ;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 0.5rem;
+  color: #9d9d9d;
+  padding-left: 0.8rem;
+  background: url('../images/eyes_05.png') left center no-repeat;
+  background-size: 0.8rem 0.8rem;
+}
+.textList li.item .pic {
+  width: 3.77777778rem;
+  height: 2.8rem;
+  position: absolute;
+  right: 0;
+  top: 0.44444444rem;
+}
+.textList .hyp {
+  width: 2.55555556rem;
+  height: 0.73333333rem;
+  border: 1px solid #bd964f;
+  border-radius: 0.73333333rem;
+  line-height: 0.77777778rem;
+  color: #bd964f;
+  margin: 0.66666667rem auto 0;
+  font-size: 0.53333333rem;
+  text-align: center;
+}

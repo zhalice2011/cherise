@@ -1,0 +1,364 @@
+.banner {
+  margin-top: 3.88888889rem;
+  position: relative;
+  margin-bottom: 0.31111111rem;
+}
+.banner .ban_txt {
+  width: 10.66666667rem;
+  height: 1.93333333rem;
+  position: absolute;
+  left: 50%;
+  top: 3.33333333rem;
+  transform: translateX(-50%);
+  background: url("../images/ban_txt.png") no-repeat center top;
+  background-size: contain;
+}
+.banner .ban_txt .main_tit {
+  font-size: 0.62222222rem;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.15555556rem;
+}
+.banner .ban_txt .sub_tit {
+  font-size: 0.48888889rem;
+  color: #bd964f;
+  text-align: center;
+  margin-top: 0.11111111rem;
+}
+.product.intro {
+  background-color: #fff;
+  margin-bottom: 0.31111111rem;
+  padding-bottom: 0.55555556rem;
+}
+.product.intro .title {
+  padding-bottom: 0.66666667rem;
+}
+.product.intro .title h2 {
+  font-size: 0.62222222rem;
+  color: #000;
+  position: relative;
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 0.22222222rem;
+}
+.product.intro .title h2:before {
+  content: "";
+  display: block;
+  width: 0.64444444rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 35%;
+  top: 0.62222222rem;
+  background: url("../images/deco.jpg") no-repeat center top;
+  background-size: contain;
+}
+.product.intro .title h2:after {
+  content: "";
+  display: block;
+  width: 0.64444444rem;
+  height: 0.2rem;
+  position: absolute;
+  right: 35%;
+  top: 0.62222222rem;
+  background: url("../images/deco.jpg") no-repeat center top;
+  background-size: contain;
+}
+.product.intro .title p {
+  font-size: 0.48888889rem;
+  color: #a3a3a3;
+  text-align: center;
+}
+.product.intro .pro_li {
+  background-color: #fff;
+}
+.product.intro .pro_li li {
+  width: 33%;
+  height: 5.11111111rem;
+  float: left;
+  border-bottom: 1px solid #e3e3e3;
+  border-left: 1px solid #e3e3e3;
+}
+.product.intro .pro_li li a {
+  display: block ;
+  width: 100%;
+  height: 100%;
+}
+.product.intro .pro_li li a .picture {
+  width: 3.88888889rem;
+  height: 3rem;
+  margin: 0 auto;
+}
+.product.intro .pro_li li a .p1 {
+  font-size: 0.48888889rem;
+  color: #696569;
+  line-height: 1rem;
+  text-align: center;
+  position: relative;
+}
+.product.intro .pro_li li a .p1:after {
+  content: "";
+  display: block;
+  width: 1.55555556rem;
+  height: 2px;
+  background-color: #bd964f;
+  position: absolute;
+  left: 50%;
+  top: 0.88888889rem;
+  transform: translateX(-50%);
+}
+.product.intro .pro_li li a .p2 {
+  font-size: 0.48888889rem;
+  color: #bd964f;
+  text-align: center;
+  line-height: 0.88888889rem;
+}
+.product.intro .more {
+  display: block;
+  width: 2.57777778rem;
+  height: 0.8rem;
+  color: #a3a3a3;
+  border: 1px solid #a3a3a3;
+  font-size: 0.48888889rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin: 0.44444444rem auto 0;
+}
+.video.intro {
+  background-color: #fff;
+  margin-bottom: 0.31111111rem;
+  padding-bottom: 0.55555556rem;
+}
+.video.intro .title {
+  padding-bottom: 0.66666667rem;
+}
+.video.intro .title h2 {
+  font-size: 0.62222222rem;
+  color: #000;
+  position: relative;
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 0.22222222rem;
+}
+.video.intro .title h2:before {
+  content: "";
+  display: block;
+  width: 0.64444444rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 35%;
+  top: 0.62222222rem;
+  background: url("../images/deco.jpg") no-repeat center top;
+  background-size: contain;
+}
+.video.intro .title h2:after {
+  content: "";
+  display: block;
+  width: 0.64444444rem;
+  height: 0.2rem;
+  position: absolute;
+  right: 35%;
+  top: 0.62222222rem;
+  background: url("../images/deco.jpg") no-repeat center top;
+  background-size: contain;
+}
+.video.intro .title p {
+  font-size: 0.48888889rem;
+  color: #a3a3a3;
+  text-align: center;
+}
+.video.intro .vision {
+  color: #fff;
+  position: relative;
+}
+.video.intro .vision .poster {
+  height: 8.22222222rem;
+  overflow: hidden;
+}
+.video.intro .vision .box {
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+  height: 8.22222222rem;
+  color: #ffffff;
+}
+.video.intro .vision .tit {
+  font-size: 0.8rem;
+  position: absolute;
+  left: 50%;
+  top: 1.11111111rem;
+  transform: translateX(-50%);
+}
+.video.intro .vision .brief {
+  font-size: 0.4rem;
+  position: absolute;
+  left: 50%;
+  top: 2.66666667rem;
+  transform: translateX(-50%);
+}
+.video.intro .vision .icon {
+  width: 1.71111111rem;
+  height: 1.71111111rem;
+  position: absolute;
+  left: 50%;
+  top: 4.22222222rem;
+  transform: translateX(-50%);
+}
+.video.intro .vision .video_type {
+  width: 14.22222222rem;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+.video.intro .vision .video_type li {
+  float: left;
+  margin: 0.17777778rem 0.11111111rem;
+  width: 2.48888889rem;
+  height: 1.04444444rem;
+  border-radius: 1.08888889rem;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+}
+.video.intro .vision .video_type li a {
+  display: block;
+  font-size: 0.44444444rem;
+  line-height: 1.04444444rem;
+  color: #646464;
+}
+.video.intro .vision .video_type li.current {
+  border: 1px solid #bd964f;
+}
+.video.intro .vision .video_type li.current a {
+  color: #bd964f;
+}
+.doctor.intro {
+  background-color: #fff;
+  margin-bottom: 0.31111111rem;
+  padding-bottom: 0.55555556rem;
+}
+.doctor.intro .title {
+  padding-bottom: 0.66666667rem;
+}
+.doctor.intro .title h2 {
+  font-size: 0.62222222rem;
+  color: #000;
+  position: relative;
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 0.22222222rem;
+}
+.doctor.intro .title h2:before {
+  content: "";
+  display: block;
+  width: 0.64444444rem;
+  height: 0.2rem;
+  position: absolute;
+  left: 35%;
+  top: 0.62222222rem;
+  background: url("../images/deco.jpg") no-repeat center top;
+  background-size: contain;
+}
+.doctor.intro .title h2:after {
+  content: "";
+  display: block;
+  width: 0.64444444rem;
+  height: 0.2rem;
+  position: absolute;
+  right: 35%;
+  top: 0.62222222rem;
+  background: url("../images/deco.jpg") no-repeat center top;
+  background-size: contain;
+}
+.doctor.intro .title p {
+  font-size: 0.48888889rem;
+  color: #a3a3a3;
+  text-align: center;
+}
+.doctor.intro .doctor_li {
+  background-color: #fff;
+}
+.doctor.intro .doctor_li li {
+  width: 6.66666667rem;
+  height: 6rem;
+  float: left;
+  margin: 0 0.4rem;
+}
+.doctor.intro .doctor_li li a {
+  display: block ;
+  width: 100%;
+  height: 100%;
+}
+.doctor.intro .doctor_li li a .picture {
+  width: 6.68888889rem;
+  height: 3.84444444rem;
+  margin: 0 auto;
+}
+.doctor.intro .doctor_li li a .p1 {
+  font-size: 0.62222222rem;
+  color: #696569;
+  line-height: 1rem;
+  margin-top: 0.22222222rem;
+  text-align: center;
+  position: relative;
+}
+.doctor.intro .doctor_li li a .p1:after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background-color: #bd964f;
+  position: absolute;
+  left: 50%;
+  top: 1rem;
+  transform: translateX(-50%);
+}
+.doctor.intro .doctor_li li a .p2 {
+  font-size: 0.48888889rem;
+  color: #bd964f;
+  text-align: center;
+  line-height: 1rem;
+}
+.doctor.intro .more {
+  display: block;
+  width: 2.57777778rem;
+  height: 0.8rem;
+  color: #a3a3a3;
+  border: 1px solid #a3a3a3;
+  font-size: 0.48888889rem;
+  line-height: 0.8rem;
+  text-align: center;
+  border-radius: 0.4rem;
+  margin: 0.44444444rem auto 0;
+}
+.company_info {
+  height: 9.77777778rem;
+  padding: 0 0.55555556rem;
+}
+.company_info .name {
+  font-size: 0.66666667rem;
+  color: #696569;
+  line-height: 1.77777778rem;
+}
+.company_info .msg {
+  font-size: 0.53333333rem;
+  color: #a3a3a3;
+  line-height: 1.11111111rem;
+}
+.company_info .share {
+  padding: 0.33333333rem 0;
+}
+.company_info .share a {
+  display: inline-block;
+  width: 1.22222222rem;
+  height: 1.22222222rem;
+  float: left;
+  padding-right: 0.44444444rem;
+}
+.footer {
+  height: 1.77777778rem;
+  padding: 0 0.55555556rem;
+  background-color: #fff;
+  line-height: 1.77777778rem;
+  font-size: 0.62222222rem;
+  color: #9d9d9d;
+}

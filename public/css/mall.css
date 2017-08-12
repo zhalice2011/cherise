@@ -1,0 +1,60 @@
+.mall {
+  margin-top: 4.5rem;
+  position: relative;
+}
+.mall .swiper-slide {
+  width: 12rem;
+  position: relative;
+}
+.mall .swiper-slide .title {
+  position: absolute;
+  left: 50%;
+  top: 1.11111111rem;
+  transform: translateX(-50%);
+  padding-bottom: 0.66666667rem;
+  width: 14rem;
+  text-align: center;
+}
+.mall .swiper-slide .title h2 {
+  font-size: 0.48888889rem;
+  position: relative;
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 0.22222222rem;
+  color: #bc964f;
+}
+.mall .swiper-slide .title h2:before {
+  content: "";
+  display: block;
+  width: 1.48888889rem;
+  height: 0.06666667rem;
+  position: absolute;
+  left: 24%;
+  top: 0.62222222rem;
+  background-color: #e4e0e4;
+}
+.mall .swiper-slide .title h2:after {
+  content: "";
+  display: block;
+  width: 1.48888889rem;
+  height: 0.06666667rem;
+  position: absolute;
+  right: 24%;
+  top: 0.62222222rem;
+  background-color: #e4e0e4;
+}
+.mall .swiper-slide .title .p1 {
+  font-size: 0.8rem;
+  color: #000;
+  text-align: center;
+  padding-top: 0.22222222rem;
+}
+.mall .swiper-slide .title .p2 {
+  font-size: 0.48888889rem;
+  color: #bc964f;
+  text-align: center;
+}
+.mall .swiper-slide .title .p2 span {
+  color: #b0b0b0;
+  text-decoration: line-through;
+}

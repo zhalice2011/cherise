@@ -1,149 +1,282 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-  <title>雪妮我爱你</title>
-    <meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,全网视频解析,VIP在线解析,
-视频VIP在线解析,VIP视频在线解析">
-    <meta name="description" content="雪妮VIP视频解析无广告、无弹窗的VIP视频解析">
-<link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/amazeui/2.7.2/css/amazeui.flat.min.css">
-<link rel="stylesheet" type="text/css" href="//lai.yuweining.cn/vip//video.css">
+    <meta charset="utf-8">
+    <title>店面</title>
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/shop.css">
+    <style>
+        .BMapLabel{ text-indent:1.0rem; padding-bottom: 0.3rem;}
+    </style>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/public.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=trLEKMVBCc6MKGemHlUXdyy2&s=1"></script>
+
 </head>
 <body>
+<div class="nav">
+    <div class="nav_top">
+       <span class="menu_icon" id="show_menu">
+       <img src="images/menu_icon.jpg">
+   </span>
+        <div class="logo">
+            <img src="images/logo.jpg">
+        </div>
+    </div>
+    <div class="nav_wrap">
+        <ul class="nav_bot">
+            <li>
+                <a href="index.html">
+                    <div class="txt">首页</div>
+                    <div class="deco">Home</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="brand.html">
+                    <div class="txt">品牌</div>
+                    <div class="deco">brand</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="project.html">
+                    <div class="txt">项目</div>
+                    <div class="deco">service</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="doctor.html">
+                    <div class="txt">专家</div>
+                    <div class="deco">boss</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li  class="current">
+                <a href="shop.html">
+                    <div class="txt">店面</div>
+                    <div class="deco">store</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="case.html">
+                    <div class="txt">案例</div>
+                    <div class="deco">case</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="mall.html">
+                    <div class="txt">商城</div>
+                    <div class="deco">mall</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="text.html">
+                    <div class="txt">文章</div>
+                    <div class="deco">text</div>
+                </a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="txt">关于</div>
+                    <div class="deco">about</div>
+                </a>
+                <div class="line"></div>
+            </li>
 
-<!--
-<header class="am-topbar am-topbar-inverse">
- <div class="header">
-  <h1 class="am-topbar-brand">
-    <a href="//lai.yuweining.cn/vip/" class="am-text-ir">全网VIP视频在线解析</a>
-  </h1>
 
-  <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: 
-'#doc-topbar-collapse'}">
-<span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        </ul>
+    </div>
+</div>
+<div class="side_menu" >
+    <div id="close_menu" class="close_menu">
+        <img src="images/close.png">
+    </div>
+    <ul>
+        <li class="index">
+            <a href="index.html">首页</a>
+        </li>
+        <li class="item current">
+            <a href="brand.html">品牌</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="project.html">项目</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="doctor.html">专家</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="shop.html">店面</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="case.html">案例</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="mall.html">商城</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="text.html">文章</a>
+            <span class="deco"></span>
+        </li>
+        <li class="item ">
+            <a href="#">关于</a>
+            <span class="deco"></span>
+        </li>
 
-  <div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
-    <ul class="am-nav am-nav-pills am-topbar-nav">
-      <li><a href="//lai.yuweining.cn/vip/">首页</a></li>
-
-      <li><a href="//lai.yuweining.cn/vip/163.html">音乐</a></li>
-     <li class="am-active"><a>视频</a></li>
-
-	  <li><a href="https://lai.yuweining.cn/archives/750/">教程</a></li>  
-<li><a href="https://lai.yuweining.cn/fuli.html">福利</a></li>
- <li><a href="https://lai.yuweining.cn/tos.html" target=_blank >SS</a></li>
-   <li><a href="//lai.yuweining.cn/vip/vip.html" target="_blank" >旧版</a></li>
     </ul>
-
-
-    <div class="am-topbar-right">
-      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-modal="{target: '#fenxiang'}">分享</button>
-      <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" data-am-modal="{target: '#juanzhu'}">打赏</button>
-
-
-
-    </div>
-  </div>
- </div>
-</header>
--->
-
-
-
-
-
-
-
-<div class="main">
-
-<div class="logo">雪妮--全网VIP视频解析</div>
-
-
- <div class="am-form-group am-form-icon search">
-    <i class="am-icon-search"></i>
-    <input type="text" placeholder="电脑上回车，手机上转行" autocomplete="off" class="am-form-field s-input" 
-onkeyup="start();">
-  </div>
-
-<br />
-
-<button type="button" class="am-btn am-btn-secondary" data-am-modal="{target: '#fenxiang'}">分享</button>
-<button type="button" class="am-btn am-btn-success" data-am-modal="{target: '#juanzhu'}">打赏</button>
-
-<div class="am-modal-actions" id="fenxiang">
-  <div class="am-modal-actions-group">
-    <ul class="am-list">
-      <li class="am-modal-actions-header">分享本站给你的朋友</li>
-            <li><a href="http://service.weibo.com/share/share.php?title=雪妮我爱你&url=http://cherise.lovezhishu.cn" target="_blank"><span class="am-icon-share-alt"></span>分享到新
-浪微博
-</a></li>
-      <li class="am-modal-actions-danger">
-        <a href="http://connect.qq.com/widget/shareqq/index.html?url=http://cherise.lovezhishu.cn&title=雪妮我爱你" 
-target="_blank"><i class="am-icon-qq"></i>分享到QQ</a>
-      </li>
-    </ul>
-  </div>
-  <div class="am-modal-actions-group">
-    <button class="am-btn am-btn-secondary am-btn-block" data-am-modal-close>取消</button>
-  </div>
 </div>
+<div id="allmap" style="width: 100%; height:360px; margin-top: 4.4rem"></div>
+<ul class="shopList">
+    <li>
+        <a href="#">
+            <div class="tupian"><img src="images/shop_03.png"></div>
+            <div class="tel"><img src="images/teln.png"></div>
+            <div class="shop_intro">
+                <h2 class="shopName">碧丽姿市委店</h2>
+                <p class="distance">距您5.5km</p>
+                <p class="addr">建国小经三路与纬四路交叉口西50米路北</p>
+            </div>
 
-<div class="am-popup" id="player">
-  <div class="am-popup-inner">
-    <div class="am-popup-hd">
-      <h4 class="am-popup-title">雪妮--视频播放器</h4>
-      <span data-am-modal-close
-            class="am-close">&times;</span>
-    </div>
-    <div class="am-popup-bd">
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <div class="tupian"><img src="images/shop_03.png"></div>
+            <div class="tel"><img src="images/teln.png"></div>
+            <div class="shop_intro">
+                <h2 class="shopName">碧丽姿市委店</h2>
+                <p class="distance">距您5.5km</p>
+                <p class="addr">建国小经三路与纬四路交叉口西50米路北</p>
+            </div>
 
-    </div>
-  </div>
-</div>
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <div class="tupian"><img src="images/shop-1.png"></div>
+            <div class="tel"><img src="images/teln.png"></div>
+            <div class="shop_intro">
+                <h2 class="shopName">碧丽姿市委店</h2>
+                <p class="distance">距您5.5km</p>
+                <p class="addr">建国小经三路与纬四路交叉口西50米路北</p>
+            </div>
 
-<div class="am-modal am-modal-alert" tabindex="-1" id="juanzhu">
-  <div class="am-modal-dialog">
-    <div class="am-modal-hd">我爱雪妮</div>
-    <div class="am-modal-bd">
-      <span style="display:block;text-align:center;font-size:20px;">微信</span><img style="display:block;margin:5px auto 
-0 auto;height:200px;width:200px;" src="/images/dali.png">
-    </div>
-    <div class="am-modal-footer">
-      <span class="am-modal-btn">确定</span>
-    </div>
-  </div>
-</div>
+        </a>
+    </li>
+</ul>
+<script type="text/javascript">
+    $(document).ready(function(){
 
-<div class="ds-thread" data-thread-key="VIP-VIDEO" data-title="雪妮-VIP视频在线解析" data-
-url="//lai.yuweining.cn/vip//"></div>
+            $.ajax({
+                type:"GET",
+                url:"js/data.json",
+                dataType:"jsonp",
+                success:function(data){
+                  var num=data.info.length;
+                   var location=[];
+                  for(var i=0;i<num;i++){
+                      var obj={};
+                      obj.lat=data.info[i].latitude;
+                      obj.long=data.info[i].longitude;
+                      obj.name=data.info[i].shopname;
+                      location.push(obj);
+                  }
+                    console.log(location);
+                    // 百度地图API功能
+                    var map = new BMap.Map("allmap");
+                    var point = new BMap.Point(117.056792,36.64546);
+                         var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+                        map.addControl(top_right_navigation);
+                        map.centerAndZoom(point, 12);
+                        map.enableScrollWheelZoom(true);
+                        map.enableDragging();   //后开启拖拽
+                    var myLabel = new BMap.Label("碧丽姿脂肪管理中心(燕翔路店)",     //为lable填写内容
+                        {offset:new BMap.Size(0,0), position:point});                    //label的偏移量，为了让label的中心显示在点上
 
-</div>
-<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/amazeui/2.7.2/js/amazeui.min.js"></script>
-<script src="//lai.yuweining.cn/vip/vv.js?17528"></script>
+//    myLabel.setTitle("我是文本标注label");               //为label添加鼠标提示
+                    map.addOverlay(myLabel);                             //把label添加到地图上
 
 
-<script type='text/javascript'>
-    (function(m, ei, q, i, a, j, s) {
-        m[i] = m[i] || function() {
-            (m[i].a = m[i].a || []).push(arguments)
-        };
-        j = ei.createElement(q),
-            s = ei.getElementsByTagName(q)[0];
-        j.async = true;
-        j.charset = 'UTF-8';
-        j.src = '//static.meiqia.com/dist/meiqia.js';
-        s.parentNode.insertBefore(j, s);
-    })(window, document, 'script', '_MEIQIA');
+                    myLabel.setStyle({                                   //给label设置样式，任意的CSS都是可以的
+                        color:"#333",                   //颜色
+                        fontSize:"0.4rem",               //字号
+                        border:"0",                    //边
+                        height:"0.9rem",                //高度
+                        width:"0.9rem",                 //宽
+                        textAlign:"center",            //文字水平居中显示
+                        lineHeight:"0.8rem",            //行高，文字垂直居中显示
+                        background:"url(images/location_03.png)",    //背景图片，这是房产标注的关键！
+                        backgroundSize:"contain",    //背景图片，这是房产标注的关键！
+                        cursor:"pointer"
+                    });
+
+                    function addMark(x,y,msg){
+                           var point = new BMap.Point(x,y);
+                           var myLabel = new BMap.Label(msg,     //为lable填写内容
+                          {offset:new BMap.Size(0,0), position:point});
+                           map.addOverlay(myLabel);      //label的偏移量，为了让label的中心显示在点上
+                          console.log(x);
+                          console.log(y);
+                          console.log(msg);
+                        myLabel.setStyle({                                   //给label设置样式，任意的CSS都是可以的
+                            color:"#333",                   //颜色
+                            fontSize:"0.4rem",               //字号
+                            border:"0",                    //边
+                            height:"0.9rem",                //高度
+                            width:"0.9rem",                 //宽
+                            textAlign:"center",            //文字水平居中显示
+                            lineHeight:"0.8rem",            //行高，文字垂直居中显示
+                            background:"url(images/location_03.png)",    //背景图片，这是房产标注的关键！
+                            backgroundSize:"contain",    //背景图片，这是房产标注的关键！
+                            cursor:"pointer"
+                        });
+
+                   }
+                 for(var k=0;k<num;k++){
+                        addMark(location[k].long,location[k].lat,location[k].name);
+                 }
 
 
 
-    _MEIQIA('entId', 26623);  
 
-// 在这里开启无按钮模式（常规情况下，需要紧跟在美洽嵌入代码之后）
-    _MEIQIA('withoutBtn');
+
+
+
+                }
+            });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
 
 </script>
 </body>
