@@ -1,7 +1,5 @@
-var express = require('express');
-var router = express.Router();
-var data = require('./data')
-var obj={"info":[
+{
+  "info":[
               { "longitude": 116.981344, "latitude": 36.679841, "shopname": "碧丽姿","addr":"山东省济南市天桥区堤口路102 ","tel":"" },
               { "longitude": 117.020961, "latitude": 36.62588, "shopname": "碧丽姿脂肪管理中心","addr":"八里洼路13-2号 ","tel":"(0531)82566600" },
               { "longitude": 116.089595, "latitude": 36.660266, "shopname": "碧丽姿脂肪管理中心(中润店)","addr":"窑头路中润世纪城北门1楼A-33（窑头路与浆水泉路交叉口西300米） ","tel":"(0531)67873867" },
@@ -17,17 +15,3 @@ var obj={"info":[
               { "longitude": 117.098113, "latitude": 36.687555, "shopname": "碧丽姿脂肪管理中心(华龙路店)","addr":"华龙路新龙家园门面房5号楼5单元101.102（华龙路与华阳路交叉口西北角）","tel":"(0531)67873860"}
         ]
 }
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
-
-router.get('/data', function(req, res, next) {
-  // res.send('index', data
-
-  // );
-  res.send(obj);
-});
-
-module.exports = router;
